@@ -1,0 +1,16 @@
+<app-adminnavbar></app-adminnavbar>
+<div class="container">
+    <div class="header">
+        <h1>MEMBERS</h1>
+        <div></div>
+    </div>
+    <div class="members">
+        <div class="member" *ngFor="let user of users">
+            <div class="name">
+                <h2>{{user.firstname}} {{user.lastname}} </h2>
+            </div>
+            <button class="button" (click)="viewUser(user.userId)">View</button>
+        </div>
+    </div>
+</div>
+

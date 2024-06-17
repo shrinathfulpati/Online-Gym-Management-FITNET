@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="card">
+        <form >
+            <h1>TRAINER DETAILS</h1>
+            <div class="i">
+                <label for="firstname">Firstname :</label><br>
+                <input type="text" name="firstname" id="firstname" [(ngModel)]="trainer.firstname">
+            </div>
+            <div class="i">
+                <label for="lastname">Lastname :</label><br>
+                <input type="text" name="lastname" id="lastname" [(ngModel)]="trainer.lastname">
+            </div>
+            <div class="i">
+                <label for="email">Email :</label><br>
+                <input type="email" name="email" id="email" [(ngModel)]="trainer.email">
+            </div>
+            <div class="i">
+                <label for="mobileno">Mobile :</label><br>
+                <input type="text" name="mobileno" id="mobileno" [(ngModel)]="trainer.mobileno">
+            </div>
+            <div class="i">
+                <button type="submit" (click)="addTrainer()" >ADD</button>
+            </div>
+        </form>
+    </div>
+</div>

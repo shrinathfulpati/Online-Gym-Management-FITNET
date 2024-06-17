@@ -1,0 +1,31 @@
+<app-adminnavbar></app-adminnavbar>
+<div class="container">
+    <div class="header">
+        <h1>SLOTS</h1>
+        <form onsubmit="addSlot()">
+
+        <div>
+        <label for="startTime">Start-Time : </label>
+        <input type="time" name="startTime" id="startTime" [(ngModel)]="slot.startTime">
+        </div>
+
+        <div>
+        <label for="endTime">End-Time : </label>
+        <input type="time" name="endTime" id="endTime" [(ngModel)]="slot.endTime">
+        </div>
+
+        <input type="submit" value="ADD" class="button1" (click)="addSlot()">
+
+        </form>
+    </div>
+    <div class="slots">
+        <div class="slot" *ngFor="let slot of slots">
+            <h2>Start-Time : {{slot.startTime}}</h2>
+            <h2>End-Time : {{slot.endTime}}</h2>
+            <div class="buttons">
+                <!-- <button class="button1">View</button> -->
+                <button class="button1" (click)="remove(slot.slotId)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

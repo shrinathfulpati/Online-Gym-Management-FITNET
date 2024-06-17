@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="div">
+        <img mat-card-image style="height: 500px; width: 350px; object-fit:cover; border-radius: 25px; margin-top: 5px; "  [src]="'data:image/png;base64,'+user.image"  alt="profileImage">
+        
+    </div>
+    <div class="div">
+    <h2>Firstname : {{user.firstname}}</h2>
+    <h2>Fathername : {{user.fathername}}</h2>
+    <h2>Lastname : {{user.lastname}}</h2>
+    <h2>Age : {{user.age}}</h2>
+    <h2>Gender : {{user.gender}}</h2>
+    <h2>BloodGroup : {{user.bloodGroup}}</h2>
+    <h2>EducationLevel : {{user.educationLevel}}</h2>
+    <h2>EducationFeild : {{user.educationFeild}}</h2>
+    <h2>FamilyStatus : {{user.familyStatus}}</h2>
+    <h2>FamilyType : {{user.familyType}}</h2>
+    <div class="buttons"><button class="button" (click)="meeting(user.firstname,user.lastname,user.rid)">Meeting</button> <button (click)="interested(user.rid)" class="button" id="b2">Interested</button></div>
+    </div>
+</div>

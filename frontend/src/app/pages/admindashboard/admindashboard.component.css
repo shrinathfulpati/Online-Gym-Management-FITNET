@@ -1,0 +1,75 @@
+.navbar{
+    height: 100px;
+}
+
+
+.container{
+    color : goldenrod;
+    height: 100px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.row{
+    background-color: #171240;
+    display:flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    border-radius: 5px;
+
+}
+
+.box{
+    width: 300px;
+    border: 3px solid  #171240;
+    height: 60px;
+    color: #171240;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+}
+
+.button {
+    min-width: 200px;
+    min-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #FFD700; 
+    background: #343A40;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.4); 
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    
+    padding: 10px;
+    
+  }
+
+.buttons{
+    display: flex;
+    gap: 10px;
+  
+}

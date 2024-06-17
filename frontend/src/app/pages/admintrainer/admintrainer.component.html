@@ -1,0 +1,15 @@
+<app-adminnavbar></app-adminnavbar>
+<div class="container">
+    <div class="header">
+        <h1>TRAINERS</h1>
+        <button class="button" (click)="add()">ADD</button>
+    </div>
+    <div class="trainers">
+        <div class="trainer" *ngFor="let trainer of trainers">
+            <h3>First-Name : {{trainer.firstname}} </h3>
+            <h3>Last-Name : {{trainer.lastname}} </h3>
+            <h3>Email : {{trainer.email}}</h3>
+            <button class="button" (click)="remove(trainer.trainerId)">REMOVE</button>
+        </div>
+    </div>
+</div>

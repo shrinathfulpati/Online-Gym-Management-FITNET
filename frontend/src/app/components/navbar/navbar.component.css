@@ -1,0 +1,37 @@
+.navbar{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 20px;
+  color:#F85638;
+  padding-inline-start: 70px;
+  padding-inline-end: 70px;
+  background-color: #0E0C17; 
+  /* background-color: #191919; */
+}
+
+.links{
+  margin-left: -500px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+button{
+  background-color: #0E0C17;
+  color:whitesmoke;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.title{
+  font-size: 40px;
+}
+
+
+  

@@ -1,0 +1,23 @@
+<app-navbar [userId]="userId"></app-navbar>
+<div class="container">
+    <div class="card">
+        <form >
+            <h1>FEEDBACK</h1>
+            <div class="i">
+                <label for="email">Email :</label><br>
+                <input type="email" name="email" id="email" [(ngModel)]="fd.email">
+            </div>
+            <div class="i">
+                <label for="subject">Subject :</label><br>
+                <input type="text" name="subject" id="subject" [(ngModel)]="fd.subject">
+            </div>
+            <div class="i">
+                <label for="description">Description :</label><br>
+                <input style="height: 150px;" type="text" name="description" id="description" [(ngModel)]="fd.description">
+            </div>
+            <div class="i">
+                <button type="submit" (click)="feedback()" >ADD</button>
+            </div>
+        </form>
+    </div>
+</div>

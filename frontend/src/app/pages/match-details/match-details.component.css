@@ -1,0 +1,49 @@
+.div{
+    background-color: #171240;
+    max-width: 370px;
+    color : goldenrod;
+    
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+}
+
+.container{
+    
+    background-color: #171240;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    gap: 50px;
+    display: flex;
+    justify-content: start;
+    border-radius: 25px;
+}
+
+.button {
+    min-width: 200px;
+    min-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #FFD700; 
+    background: #343A40;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.4); 
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    
+    padding: 10px;
+    
+  }
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}

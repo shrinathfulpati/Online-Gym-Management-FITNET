@@ -1,0 +1,15 @@
+<app-navbar [userId]="userId"></app-navbar>
+<div class="container">
+    <div class="header">
+        <h1>SLOTS</h1>
+    </div>
+    <div class="slots">
+        <div class="slot" *ngFor="let slot of slots">
+            <h2>Start-Time : {{slot.startTime}}</h2>
+            <h2>End-Time : {{slot.endTime}}</h2>
+            <div class="buttons">
+                <button class="button1" (click)="addSlot(slot.slotId)">Book</button>
+            </div>
+        </div>
+    </div>
+</div>
